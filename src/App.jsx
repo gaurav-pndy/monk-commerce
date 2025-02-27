@@ -6,7 +6,7 @@ import ProductList from "./components/ProductList";
 const App = () => {
   return (
     <DndProvider backend={HTML5Backend}>
-      <div className="p-4  max-w-3xl mx-auto">
+      <div className="p-4  max-w-4xl mx-auto">
         <ProductList />
       </div>
     </DndProvider>

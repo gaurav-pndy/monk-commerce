@@ -1,5 +1,5 @@
-const API_URL = "https://stageapi.monkcommerce.app/task/products/search";
-const API_KEY = "72njgfa948d9aS7gs5"; // Replace with actual key
+const API_URL = import.meta.env.VITE_API_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const fetchProducts = async (search = "", page = 1) => {
   try {

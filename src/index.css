@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+body{
+    background-color: #F6F6F8;
+}
+
+.scroll-thin::-webkit-scrollbar {
+    width: 6px; 
+
+  }
+  
+  .scroll-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 3px;
+  
+  }
+  
+  .scroll-thin::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); 
+  }
+  
