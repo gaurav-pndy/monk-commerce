@@ -19,7 +19,11 @@ const ProductPicker = ({ setProducts, close, productIndex }) => {
     const loadProducts = async () => {
       setIsLoading(true);
       try {
-        const data = await fetchProducts(search, page);
+        const data = (await fetchProducts(search, page)) || [];
+        if (!Array.isArray(data)) {
+          console.error("Fetched data is not an array:", data);
+          return;
+        }
         if (page === 1) {
           setFetchedProducts(data);
         } else {
